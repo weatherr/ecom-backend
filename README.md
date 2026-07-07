@@ -14,7 +14,7 @@ Note: This API is designed to integrate directly with a React/Vite frontend appl
 * **Testing:** Spring Boot Test
 
 ## Build & Run Instructions
-To boot the application locally:
+To boot the application locally:  
 mvn spring-boot:run
 
 ### The Postman Collection
