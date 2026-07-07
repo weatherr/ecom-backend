@@ -3,14 +3,15 @@ This repository contains the REST API service that is used for a e-commerce plat
 
 Note: This API is designed to integrate directly with a React/Vite frontend application which I made.
 
-## Tech Stack
-Java 25 / Spring Boot,
-Spring Web MVC,
-PostgreSQL,
-Spring Data JPA,
-Maven,
-Lombok,
-Spring Boot Test,
+### Tech Stack
+
+* **Core Framework:** Java 25 / Spring Boot
+* **API:** Spring Web MVC
+* **Database:** PostgreSQL
+* **ORM:** Spring Data JPA
+* **Build Tool:** Maven
+* **Utilities:** Lombok
+* **Testing:** Spring Boot Test
 
 ## Build & Run Instructions
 To boot the application locally:
