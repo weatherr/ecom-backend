@@ -1,0 +1,292 @@
+{
+  "info": {
+    "_postman_id": "a14ecd7e-8e7a-4ad8-8ab0-c373ec5e0c2e",
+    "name": "SpringEcom",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7000182"
+  },
+  "item": [
+    {
+      "name": "Adding a product w image from postman",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n  \"name\": \"colgate\",\n  \"description\": \"This is a detailed example product.\",\n  \"brand\": \"ExampleBrand\",\n  \"price\": 236,\n  \"category\": \"Electronics\",\n  \"stockQuantity\": 100,\n  \"releaseDate\": \"2024-04-17\",\n  \"productAvailable\": true\n}",
+              "type": "text",
+              "uuid": "778401e0-a5d1-4917-bf9f-61265bb93c02",
+              "contentType": "application/json"
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "388e9f2a-bfa6-421b-8a92-193528b42be6",
+              "src": "/C:/ACT LIKE THIS IS NOT DRIVE C/Programmming/Java/Udemy - Java Course/Section 17 Spring Boot MVC project/images_products/galaxy_flip.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/product",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get product",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/product/9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "searchbar",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/jobPost/keyword/Laravel",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "jobPost",
+            "keyword",
+            "Laravel"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetch image from server",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n  \"name\": \"colgate\",\n  \"description\": \"This is a detailed example product.\",\n  \"brand\": \"ExampleBrand\",\n  \"price\": 236,\n  \"category\": \"Electronics\",\n  \"stockQuantity\": 100,\n  \"releaseDate\": \"2024-04-17\",\n  \"productAvailable\": true\n}",
+              "type": "text",
+              "uuid": "778401e0-a5d1-4917-bf9f-61265bb93c02",
+              "contentType": "application/json",
+              "disabled": true
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "388e9f2a-bfa6-421b-8a92-193528b42be6",
+              "src": "/C:/ACT LIKE THIS IS NOT DRIVE C/Programmming/Java/Udemy - Java Course/Section 17 Spring Boot MVC project/images_products/galaxy_flip.jpg",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/product/7/image",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product",
+            "7",
+            "image"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update product",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n  \"name\": \"colgate\",\n  \"description\": \"whatever\",\n  \"brand\": \"ExampleBrand\",\n  \"price\": 236,\n  \"category\": \"Electronics\",\n  \"stockQuantity\": 100,\n  \"releaseDate\": \"2024-04-17\",\n  \"productAvailable\": true\n}",
+              "type": "text",
+              "uuid": "778401e0-a5d1-4917-bf9f-61265bb93c02",
+              "contentType": "application/json"
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "388e9f2a-bfa6-421b-8a92-193528b42be6",
+              "src": "/C:/ACT LIKE THIS IS NOT DRIVE C/Programmming/Java/Udemy - Java Course/Section 17 Spring Boot MVC project/images_products/samsung_fold.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/product/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n  \"name\": \"colgate\",\n  \"description\": \"whatever\",\n  \"brand\": \"ExampleBrand\",\n  \"price\": 236,\n  \"category\": \"Electronics\",\n  \"stockQuantity\": 100,\n  \"releaseDate\": \"2024-04-17\",\n  \"productAvailable\": true\n}",
+              "type": "text",
+              "uuid": "778401e0-a5d1-4917-bf9f-61265bb93c02",
+              "contentType": "application/json",
+              "disabled": true
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "388e9f2a-bfa6-421b-8a92-193528b42be6",
+              "src": "/C:/ACT LIKE THIS IS NOT DRIVE C/Programmming/Java/Udemy - Java Course/Section 17 Spring Boot MVC project/images_products/Nokia_3310.jpg",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/product/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "product",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "product search",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product",
+              "value": "{\n  \"name\": \"colgate\",\n  \"description\": \"This is a detailed example product.\",\n  \"brand\": \"ExampleBrand\",\n  \"price\": 236,\n  \"category\": \"Electronics\",\n  \"stockQuantity\": 100,\n  \"releaseDate\": \"2024-04-17\",\n  \"productAvailable\": true\n}",
+              "type": "text",
+              "uuid": "778401e0-a5d1-4917-bf9f-61265bb93c02",
+              "contentType": "application/json",
+              "disabled": true
+            },
+            {
+              "key": "imageFile",
+              "type": "file",
+              "uuid": "388e9f2a-bfa6-421b-8a92-193528b42be6",
+              "src": "/C:/ACT LIKE THIS IS NOT DRIVE C/Programmming/Java/Udemy - Java Course/Section 17 Spring Boot MVC project/images_products/galaxy_flip.jpg",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products/search?keyword=leg",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "keyword",
+              "value": "leg"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
